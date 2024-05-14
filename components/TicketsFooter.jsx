@@ -20,7 +20,7 @@ const TicketsFooter = () => {
     }
     dispatch(setPageAkhir(currentPage * khs + (page - 1)));
     dispatch(setPageAwal(currentPage * khs));
-  }, [currentPage, page]);
+  }, [currentPage, page, dispatch]);
 
   function hadleprev() {
     setCurrentPage(currentPage - 1);

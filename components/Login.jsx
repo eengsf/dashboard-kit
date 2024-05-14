@@ -115,7 +115,6 @@ const Login = () => {
       setIsValid(false);
       return;
     }
-    // Lakukan proses login jika valid
     setIsValid(true);
     router.push("/dashboard");
   };
@@ -124,14 +123,10 @@ const Login = () => {
     <div className="flex justify-center items-center bg-[#363740] w-screen h-screen">
       <div className="flex flex-col bg-white w-[360px] h-[512px] rounded-lg p-5">
         <div className="w-full h-[40%] flex flex-col items-center gap-5">
-          {/* Bagian Header */}
           <div className="flex flex-col items-center gap-2 pt-2">
-            <div className="w-[40px] h-[40px] bg-blue-500 rounded-full">
-              {/* Placeholder Icon */}
-            </div>
+            <div className="w-[40px] h-[40px] bg-blue-500 rounded-full"></div>
             <h1 className="text-lg font-bold text-slate-400">Dashboard Kit</h1>
           </div>
-          {/* Judul Form Login */}
           <div className="flex flex-col items-center gap-1">
             <h1 className="text-2xl font-bold">Login In to Dashboard kit</h1>
             <h1 className="text-sm text-slate-400">
@@ -139,7 +134,6 @@ const Login = () => {
             </h1>
           </div>
         </div>
-        {/* Form Login */}
         <form
           className="w-full h-[60%] flex flex-col gap-6"
           onSubmit={handleLogin}>
@@ -173,16 +167,14 @@ const Login = () => {
               <FaEye size={20} className="text-slate-400" />
             </button>
           </div>
-          {/* Tombol Login */}
           <button
             type="submit"
             className="py-2 text-white bg-blue-700 rounded-md">
             Login
           </button>
-          {/* Teks Daftar Akun */}
           <div>
             <p className="text-xs text-center">
-              Don't have an account?{" "}
+              Don{`'`}t have an account?{" "}
               <Link href={"/coba"} className="text-sm text-blue-800">
                 Sign up
               </Link>
